@@ -1,0 +1,91 @@
+header /* nagłówek */
+    {
+
+               background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/121012010714-brain-side-view-horizontal-large-gallery.jpg");
+           background-position: center;
+           background-repeat: no-repeat;
+       width: 100%;
+       border: 1xp solid black;
+       padding: 50px;
+                       margin: 5px;
+       text-align: center;
+                      font-size: 35px;
+       font-fmily: "Times new roman";
+       font-position: center;
+       color: yellow;
+       text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+     }
+     body{
+         background-image:url("https://www.cebm.net/wp-content/uploads/2017/02/6423692-media_httpdldropboxco_xrhHF.jpg");
+         background-position: left;
+       }
+  article{
+       background-color: black;
+
+          }
+  main{
+       background-color: black;
+       background-position: absolute;
+       border-radius: 5px solid black;
+   text-align: left;
+       padding: 3px;
+
+      }
+
+  div /*spis treści*/
+     {
+      color: white;
+      Margin: 20px;
+      border: 2px solid black;
+      width: 35%;
+      float: left;
+      background-color:rgb(90,30,210);
+      }
+
+
+  h1 /*Tekst nagłówka*/
+      {
+
+       }
+  h2, h3, p{
+      Margin: 15px;
+      padding: 3px;
+      color:white;
+      }
+     p6, p5 /*Drugie i trzecie zdjęcie*/
+      {
+       float: right;
+       }
+     p7{
+          float: left;
+          color: red;
+          font-size: 12px;
+          }
+      a:visited{
+          color: rgb(150,50,255);
+          }
+      a:hover{
+          color:yellow;
+          font-weight: bold;
+          }
+
+   img{
+     display: block;
+       float: left;
+       padding: 3px;
+       }
+
+   section.demo /*Ankieta*/
+      {
+       background-color: black;
+       font-size: 20px;
+       font-weight: bold;
+       color: hotpink;
+     text-align: center;
+       margin: 3px;
+       padding: 10px;
+       }
+    strong{
+     color: rgb(50,230,70);
+       }

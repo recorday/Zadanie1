@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+
+   <title>BCI</title>     <!--Kodowanie i tytuł-->
+   <meta charset="UTF-8">
+
+          <!--link do stylu strony-->
+
+
+         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+         <link rel="stylesheet" href="{% static 'css/pages.css' %}">
+
+  </head>
+
+{% block content %}
+  <body
+
+  <header >                                        <!--nagłówek-->
+
+       <h1 >Komunikacja mózg-komputer</h1>
+  </header>
+
+<div>                                                    <!--spis treści-->
+
+<p1> Spis treści </p1>
+
+<ul>
+ <li>Wstęp</li>
+   <li>Badania BCI na zwierzętach
+     <ol>
+           <li>Początkowe badania</li>
+           <li>Kennedy i Young Dan</li>
+           <li>Nicolelis</li>
+               </ol>
+       <li>Kilka dodatkowych informacji</li>
+</ul>
+
+</div>
+
+<main>                                                  <!--Główna treść-->
+
+<section>                                               <!--Sekcja 1-->
+   <h2>Wstęp</h2>
+   <p>Interface mózg-komputer (<em>ang. Brain-computer interface</em>, czyli, <strong>BCI</strong>)– interfejs pozwalający na bezpośrednią komunikację między mózgiem a odpowiednim urządzeniem zewnętrznym. Jest to instrument szczególnie przydatny w momencie gdy mowa o osobach sparaliżowanych, bądź z innych powodów pozbawionych korzystania z tradycyjnych interface-ów takich jak klawiatura czy joystick. W tym celu wykorzystywane są zarówno metody inwazyjne takie np. instalowanie implantów, jak i metody nieinwazyjne wykorzystujące do komunikacji np. fale mózgowe.</p>
+ </section>
+
+ <section>                                              <!--sekcja 2-->
+   <h2>Badania BCI na zwierzętach</h2>
+   <h3>Początkowe badania</h3>
+   <p>W połowie lat 90. pojawił się gwałtowny wzrost zainteresowania badaniami BCI. Kilku zespołom udało się przechwycić skomplikowane sygnały kory ruchowej mózgu rejestrując stan zespołów neuronów i używając ich do kontroli urządzeń zewnętrznych. Jednymi z ważniejszych grup badawczych były te prowadzone przez Richarda Andersena, Johna Donoghueego, Philipa Kennedy’ego, Miguela Nicolelisa i Andrew Swartza.</p>
+   <h3>Kennedy i Yang Dan</h3>
+   <p>Philip Kennedy (który odkrył sygnał neuronowy w 1987 roku) i jego koledzy stworzyli pierwszy dokorowy interfejs mózg-komputer poprzez wszczepienie neurotropowych stożków elektrod do mózgów małp. W 1999 roku badacze prowadzeni przez Yanga Dana z Uniwersytetu Kalifornii w Berkeley zdekodowali impulsy neuronowe, co umożliwiło im odtworzenie obrazów widzianych przez koty. Badacze zdekodowali sygnały i udało im się odtworzyć rozpoznawalne sceny i poruszające się obiekty.</p>
+   <h3>Nicolelis</h3>
+   <p><img src="https://blogs.plos.org/neuroanthropology/files/2011/03/Nicolelis.jpg" alt="Nicolelis" style= "height: 120px; width:90px; float: left"> Po przeprowadzeniu wstępnych badań na szczurach w 1990 <strong> Miguel Nicolelis</strong> i jego koledzy opracowali BCI, które dekodowało aktywności mózgu małp sowich i używało zewnętrznego urządzenia do odtworzenia ruchów małp w ramionach robotów. 10 lat póżniej udało im się skonstruować BCI , które odtwarzało w czasie rzeczywistym ruchy małp sowich podczas gdy te operowały joystickiem lub sięgały po jedzenie. Jego badania w późniejszej perspektywie opracować ludzki egzoszkielet, który daję możliwość poruszania się jego użytkownikom właśnie za pomocą BCI. Jeden z pacjentów będących pod opieką Nicolelisa dokonał za pomocą takiego egzoszkieletu honorowego pierwszego wykopnięcia piłki podczas mundialu w 2014 r.</p>
+</section>
+
+<section>                                                <!--Sekcja 3-->
+
+<nav>
+   <p><strong> Tutaj zamieszczam film z prelekcją w wykonaniu Miguela Nicolelisa </strong>
+
+       <a href="https://www.ted.com/talks/miguel_nicolelis_brain_to_brain_communication_has_arrived_how_we_did_it?language=pl"> Nicolelis TED's tv</a> </p></nav>
+</section>
+
+<section>                                                 <!--Sekcja 4-->
+<h2>Kilka dodatkowych informacji</h2>
+<p>Korzystając z okazji chciałem udostępnić państwu kilka informacji, filmów czy adresów stron,<p5><img src="data:image/jpeg;base64,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" alt="monkey" style= "height: 180px; width:220px; float: right"></p5> które dotyczą poruszonego tematu i stanowią dobry,<p>  jak sądzę, punkt odniesienia do dalszych poszukiwań, a także mogą przyciągnąć i zainteresować osoby z tematem niezaznajomione.</p>
+
+<ul>
+   <li><a href="https://www.sciencedirect.com/science/article/pii/S1110866515000237"> Strona Motorlabu- Univerity of Pittsburg</a> </li>
+   <li><a href="https://www.nature.com/subjects/brain-machine-interface"> BMI- Nature</a></li>
+
+
+
+</ul>
+</section>
+</main>
+
+
+ <section class="demo">                                 <!--Sekcja 5, formularz końcowy-->
+       <h4> Formularz do strony </h4>
+       <form>
+    Imię:
+    <br>
+    <input type="text" name="firstname" value="">
+    <br>
+    Nazwisko:<br>
+    <input type="text" name="lastname" value="">
+   </form>
+
+       <p1> Czy zgodziłbyś się posiadać dodatkową kończynę, którą mógłbyś sterować za pomocą BCI ? </p1>
+       <br>
+       <p1><input type="radio" name="opcja" value="opcja nr 1" > Tak</p1>
+       <br>
+   <p1><input type="radio" name="opcja" value="opcja nr 2"> Nie</p1>
+       <br>
+   <p1>Jeśli masz chwilę, uzasadnij swoją odpowiedź:</p1>
+       <br>
+     <textarea name="tekst1" rows="8" cols="50" >
+   </textarea>
+
+   <br>
+       <input type="submit" value="Wyślij">
+
+
+
+ </section
+
+ <footer><br><br><br>
+   <p>Przygotował Patryk Bartel</p>
+ </footer>
+   </body>
+</html>
+
+{% endblock content %}
